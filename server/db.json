@@ -2,7 +2,7 @@
   "employees": [
     {
       "id": 1,
-      "name": "Sams",
+      "name": "Sam",
       "identification": "identification",
       "phone": "549302822",
       "mobile": "01222285666",
@@ -60,20 +60,26 @@
     {
       "id": 1,
       "name": "Finance",
-      "order": "2",
+      "order": "3",
       "active": true
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Marketing",
       "order": 1,
       "active": true
     },
     {
-      "id": 1,
+      "id": 3,
       "name": "Hr",
       "order": 1,
       "active": true
+    },
+    {
+      "id": 4,
+      "name": "Development",
+      "order": "4",
+      "active": "false"
     }
   ]
 }
