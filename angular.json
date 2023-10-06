@@ -4,6 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "employee-management-system": {
+      "i18n": {
+        "sourceLocale": "en-US"
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -20,9 +23,11 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/i18n"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -87,7 +92,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/i18n"
             ],
             "styles": [
               "src/styles.css"
