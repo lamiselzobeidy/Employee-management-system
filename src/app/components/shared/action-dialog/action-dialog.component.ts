@@ -1,13 +1,10 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
 import { Observable, Subscription } from 'rxjs';
-import { Employee } from 'src/app/models/employee.model';
-import { EmployeeState } from 'src/app/store/employees/employees.state';
-import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { DepartmentState } from 'src/app/store/departments/departments.state';
 import { Department } from 'src/app/models/department.model';
 import { GetDepartmentsAction } from 'src/app/store/departments/departments.action';
-
 
 @Component({
   selector: 'app-action-dialog',
@@ -43,7 +40,6 @@ export class ActionDialogComponent {
 
   toFormGroup(fields: string[], dialogData) {
     const group: any = {};
-    console.log(fields)
     fields.forEach(field => {
       group[field] = new FormControl(dialogData[field] !== undefined ? dialogData[field] : '');
     });
@@ -54,7 +50,6 @@ export class ActionDialogComponent {
     if (object.hasOwnProperty('department') || (object.length && object.includes('department'))) {
       this.store.dispatch(new GetDepartmentsAction());
     }
-
   }
 
   passBack() {

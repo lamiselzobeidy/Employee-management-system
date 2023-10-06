@@ -1,25 +1,25 @@
 .table {
-  padding: 0 1rem;
   box-shadow: 0px 3px 6px #00000029;
-  background-color: white;
 }
 
 .listing-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 10px;
-  button {
-      width: 164px;
-  }
+  padding: 30px 0px 40px 0px;
+}
+
+.add-button {
+  width: 164px;
 }
 
 @media screen and (max-width: 959.98px) {
   .bold-title {
-      font: 500 15px/17px Roboto, "Helvetica Neue", sans-serif;
+    font: 500 17px/19px Roboto, "Helvetica Neue", sans-serif;
   }
-  button {
-      width: 164px;
-      height: 36px;
+
+  .add-button {
+    width: 164px;
+    height: 36px;
   }
 }

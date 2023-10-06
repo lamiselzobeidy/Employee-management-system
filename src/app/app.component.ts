@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'employee-management-system';
   constructor(private translateService: TranslateService) {
-      this.translateService.addLangs(['en', 'ar']); // array of available langs
+      this.translateService.addLangs(['en', 'ar']);
       this.translateService.setDefaultLang('en');
   }
 }

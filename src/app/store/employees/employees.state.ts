@@ -73,8 +73,4 @@ export class EmployeeState {
     })
   }
 
-  // @Action(OpenSnackBarAction)
-  // public openSnackBarAction(ctx: StateContext<EmployeeStateModel>,
-  //   { message, panelClass }: OpenSnackBarAction) {
-  // }
 }

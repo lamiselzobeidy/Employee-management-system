@@ -1,18 +1,18 @@
 <section class="listing-header">
-  <h1 class="bold-title">{{title}} Listing Screen</h1>
-  <button (click)="openActionDialog()" type="button" class="btn btn-primary">Add New</button>
+  <h1 class="bold-title">{{title | translate}} {{"Listing Screen"| translate}}</h1>
+  <button (click)="openActionDialog()" type="button" class="btn btn-primary add-button">{{'Add New' | translate}}</button>
 </section>
 <section class="mapping-container">
 <table class="table table-striped">
   <thead>
     <tr>
-      <th *ngFor="let column of columnNames" scope="col">{{column}}</th>
-      <th>Action</th>
+      <th *ngFor="let column of columnNames" scope="col">{{column | translate}}</th>
+      <th>{{'action' | translate}}</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let row of mappingData">
-      <td *ngFor="let element of columnNames">{{row[element]}}</td>
+      <td *ngFor="let element of columnNames">{{row[element] | translate}}</td>
       <td>
         <button (click)="openActionDialog(row)" class="btn"><i class="bi bi-pencil text-primary"></i></button>
         <button (click)="deleteMappingLine(row.id)" class="btn"><i class="bi bi-trash text-danger"></i></button>

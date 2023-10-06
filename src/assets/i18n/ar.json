@@ -28,7 +28,21 @@
   "Arkan Plaza , Al Sheikh Zayed city , First floor Unit AW-417": "أركان بلازا ، مدينة الشيخ زايد ، الطابق الأول الوحدة AW-417",
   "contact_us@valU.com.eg": "contact_us@valU.com.eg",
   "16671": "16671",
-  "© All Rights Reserved by valU 2023": "© جميع الحقوق محفوظة لـ valU 2023"
-
+  "© All Rights Reserved by valU 2023": "© جميع الحقوق محفوظة لـ valU 2023",
+  "Listing Screen": "شاشة القائمة" ,
+  "Employee": "",
+  "Department":"",
+  "id": "بطاقة تعريف",
+  "name": "الاسم",
+  "identification": "تعريف",
+  "phone": "هاتف",
+  "mobile": "تليفون محمول",
+  "active": "نشاط",
+  "hireDate": "موعد التوظيف",
+  "position": "مركز",
+  "department": "قسم",
+  "action": "تعديل",
+  "Add New": "اضف جديد",
+  "order": "ترتيب"
 }
 

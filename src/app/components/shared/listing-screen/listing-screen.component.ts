@@ -15,7 +15,6 @@ export class ListingScreenComponent implements OnInit {
   @Output() deletedMappingLineId: EventEmitter<number> = new EventEmitter();
   @Output() editMappingLineId: EventEmitter<Employee | Department> = new EventEmitter();
   @Output() addMappingLineId: EventEmitter<Employee | Department> = new EventEmitter();
-  closeResult: string;
   columnNames: string[];
   modalRef: MDBModalRef | null = null;
   constructor(
@@ -44,7 +43,6 @@ export class ListingScreenComponent implements OnInit {
   }
 
   deleteMappingLine(rowId: number) {
-    // const modalRef = this.modalService.open(ActionDialogComponent);
     this.deletedMappingLineId.emit(rowId);
   }
 }

@@ -19,7 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MissingTranslationHandler, TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { SystemMissingTranslationHandler } from './missingTranslationHandler';
 import { DepartmentState } from './store/departments/departments.state';
-import { TranslateHttpLoader} from '@ngx-translate/http-loader'
+import { TranslateHttpLoader} from '@ngx-translate/http-loader';
 @NgModule({
   declarations: [
     AppComponent,

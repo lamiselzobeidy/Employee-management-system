@@ -26,8 +26,6 @@ export class DepartmentState {
   public getDepartmentSettings(
     { patchState }: StateContext<DepartmentStateModel>,
     { }: GetDepartmentsAction) {
-      console.log("hey from state");
-
     this.departmentSerive.getDepartments().subscribe(response => {
       patchState({ departments: response })
     }, err => {
@@ -37,7 +35,7 @@ export class DepartmentState {
 
   @Action(PostDepartmentAction)
   public postDepartmentAction(
-    { setState, getState, dispatch }: StateContext<DepartmentStateModel>,
+    { setState, getState }: StateContext<DepartmentStateModel>,
     { payload }: PostDepartmentAction) {
     const mappedDepartments = getState().departments;
     this.departmentSerive.createDepartment(payload).subscribe((response) => {
@@ -74,9 +72,4 @@ export class DepartmentState {
       throw err;
     })
   }
-
-  // @Action(OpenSnackBarAction)
-  // public openSnackBarAction(ctx: StateContext<DepartmentStateModel>,
-  //   { message, panelClass }: OpenSnackBarAction) {
-  // }
 }
