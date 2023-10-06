@@ -21,10 +21,9 @@ Make sure you have Node.js (14.x, 16.x, 18.x) and NPM installed on your machine.
    ```
 5. Open another integrated terminal
 6. Run the following command to start the application
-  ```bash
-    npm start
-  ```
-
+    ```bash
+      npm start
+    ```
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
