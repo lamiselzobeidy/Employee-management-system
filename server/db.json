@@ -1,0 +1,79 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Sams",
+      "identification": "identification",
+      "phone": "549302822",
+      "mobile": "01222285666",
+      "Active": true,
+      "hireDate": "10/10/2020",
+      "department": "Marketing",
+      "position": "head"
+    },
+    {
+      "id": 2,
+      "name": "Sarah",
+      "identification": "identification",
+      "phone": "5497728",
+      "mobile": "012277856",
+      "Active": true,
+      "hireDate": "5/6/2020",
+      "department": "marketing",
+      "position": "junior"
+    },
+    {
+      "id": 3,
+      "name": "Dan",
+      "identification": "identification",
+      "phone": "5493028",
+      "mobile": "012222856",
+      "Active": true,
+      "hireDate": "10/10/2020",
+      "department": "hr",
+      "position": "mid-level"
+    },
+    {
+      "id": 4,
+      "name": "Blake",
+      "identification": "identification",
+      "phone": "5493028",
+      "mobile": "012222856",
+      "Active": true,
+      "hireDate": "10/10/2020",
+      "department": "development",
+      "position": "CTO"
+    },
+    {
+      "id": 5,
+      "name": "lamis",
+      "identification": "identity",
+      "phone": "5321287",
+      "mobile": "0123234435",
+      "Active": "true",
+      "hireDate": "22-10-2930",
+      "department": "Marketing",
+      "position": "lead"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Finance",
+      "order": "2",
+      "Active": true
+    },
+    {
+      "id": 1,
+      "name": "Marketing",
+      "order": 1,
+      "Active": true
+    },
+    {
+      "id": 1,
+      "name": "Hr",
+      "order": 1,
+      "Active": true
+    }
+  ]
+}
