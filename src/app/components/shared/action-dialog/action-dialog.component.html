@@ -1,0 +1,26 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">{{dialogTitle | translate}}</h5>
+    </div>
+    <div class="modal-body">
+      <form class="px-4 py-3" [formGroup]="dialogForm" (ngSubmit)="passBack()">
+        <div *ngFor="let field of dialogData | keyvalue : returnZero" class="mb-3">
+          <label *ngIf="field.key !== 'id' && field.value !== 'id'" for="exampleFormControlInput1" class="form-label">{{dialogMode === 'edit' ? field.key : field.value}}</label>
+          <div *ngIf="field.key === 'department' || field.value === 'department'; else textField" class="mb-3">
+            <select class="form-select" id="inputGroupSelect02"  formControlName="{{dialogMode === 'edit' ? field.key : field.value }}">
+              <option  *ngFor="let department of departmentsData">{{department.name}}</option>
+            </select>
+          </div>
+          <ng-template #textField>
+            <input *ngIf="field.key !== 'id' && field.value !== 'id'" type="text" class="form-control" id="exampleFormControlInput1"
+              [value]="field.value" formControlName="{{dialogMode === 'edit' ? field.key : field.value}}">
+          </ng-template>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button (click)="passBack()" type="submit" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
