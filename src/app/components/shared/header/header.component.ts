@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   languages = [
     {
       code: "en",
@@ -28,19 +28,7 @@ export class HeaderComponent implements OnInit {
     translate.setDefaultLang('en');
   }
 
-  ngOnInit(): void {
-  }
-
   onChange(lang) {
-    console.log("el event", lang);
-
     this.translate.use(lang);
-  }
-
-  redirectTo(url: string) {
-    console.log("link ", url);
-    this.router.navigateByUrl('/', { skipLocationChange: false }).then(() => {
-      this.router.navigate([url]);
-    });
   }
 }
