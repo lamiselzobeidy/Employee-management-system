@@ -1,0 +1,6 @@
+<div *ngIf="!departmentsData; else showTable" class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+</div>
+<ng-template  #showTable>
+  <app-listing-screen [title]="'Department'" [mappingData]="departmentsData" (deletedMappingLineId)="onDeleteMappingLine($event)" (editMappingLineId)="onEditMappingLine($event)" (addMappingLineId)="onAddMappingLine($event)"></app-listing-screen>
+</ng-template>
