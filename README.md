@@ -1,10 +1,29 @@
-# EmployeeManagementSystem
+# EmployeeManagementSystem 👨‍💼
 
+## Brief about the project 📑
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+The project purpose is to list and do actions on employees and departments data.
+it consists of the following screens: 
+ - Homepage screen telling about the company
+ - Employees listing screen which is a CRUD screen where you can add, edit and delete the employee
+ - Departments listing screen which is another CRUD screen where you can add, edit and delete the department
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation Instructions 🛠
+#### Prerequisites
+Make sure you have Node.js (14.x, 16.x, 18.x) and NPM installed on your machine.
+#### Running the project
+1. Clone the project on your device
+2. Navigate to the folder where you cloned the project
+2. Open integrated terminal
+3. First run the JSON server using the following command
+   ```bash
+     npm run server
+   ```
+5. Open another integrated terminal
+6. Run the following command to start the application
+  ```bash
+    npm start
+  ```
 
 ## Code scaffolding
 
