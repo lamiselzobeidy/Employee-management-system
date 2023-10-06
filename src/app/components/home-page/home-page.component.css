@@ -1,0 +1,72 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.departments-container {
+  padding: 132px 20px 30px 20px;
+}
+
+.departments-header {
+  width: 85%;
+  text-align: start;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  padding: 50px 10px 30px 10px;
+  transform: rotateY(180deg);
+}
+
+.flip-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.brief-text {
+  text-align: start;
+
+}
+
+p {
+  color: #888888;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 959.98px) {
+  .flip-card-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 15px;
+  }
+  .departments-header {
+    text-align:center;
+  }
+}
